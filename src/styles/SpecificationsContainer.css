@@ -1,0 +1,31 @@
+.specifications-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .specifications {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .spec {
+    width: 50%; /* Displays 2 specifications per row */
+    margin-bottom: 10px;
+  }
+  
+  .spec-name {
+    font-weight: bold;
+  }
+  
+  .spec-value {
+    margin-top: 5px;
+  }
+  

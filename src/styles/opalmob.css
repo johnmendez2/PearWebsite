@@ -1,0 +1,274 @@
+.headersectionmob{
+    text-align: center;
+}
+
+.robotnamemob{
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 55px;
+}
+
+.robottypemob{
+    font-family: 'Kanit';
+    font-weight: 300;
+    margin-top: -50px;
+    font-size: 25px;
+}
+
+.featuresmob{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Kanit';
+    font-size: 1.2rem;
+}
+
+.horizontalbuttoncontainermob{
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 7%;
+}
+
+.transparentbuttonmob {
+    border: 2.4px solid black;
+    background: transparent;
+    color: black;
+    padding: 10px 33px 10px 33px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'Kanit';
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.transparentbuttonwhitemob {
+    border: 2.4px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px 33px 10px 33px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'Kanit';
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.transparentbuttonwhitemob:hover{
+    border: 2.4px solid white; 
+    background: white; 
+    color: black; 
+    border-radius: 3px;
+    transition: 200ms;
+    font-family: 'Kanit';
+}
+
+.transparentbuttonmob:hover{
+    border: 2.4px solid black; 
+    background: black; 
+    color: white; 
+    border-radius: 3px;
+    transition: 200ms;
+    font-family: 'Kanit';
+}
+
+.blackbuttonmob {
+    border: none;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    font-family: 'Kanit';
+    cursor: pointer;
+    transition: 200ms;
+    font-size: 20px;
+}
+
+.blackbuttonmob:hover{
+    border: none; 
+    background: rgb(82, 82, 82); 
+    color: white ;
+    margin-left: 10px;
+    border-radius: 3px;
+    font-family: 'Kanit';
+    transition: 200ms;
+    
+}
+/*specifications section*/
+.specifications-sectionmob{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  height: 810px;
+  padding: 10px;
+}
+
+.image-containermob {
+  flex: 1;
+}
+
+.robot-imagemob {
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.specifications-containermob {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .specifications-containermob.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  @keyframes animateUpwards {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+.specifications-titlemob {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Kanit';
+  font-weight: 300;
+  font-size: 50px;
+  color: white;
+  position: relative;
+}
+.specifications-titlemob::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.8s ease-out;
+  }
+  
+  .animate .specifications-titlemob::after {
+    width: 30rem;
+  }
+
+.specifications-listmob {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.specificationmob {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .specification-namemob {
+    font-family: 'Kanit';
+    font-weight: 300;
+    color: #58D7FF;
+  }
+  
+  .specification-valuemob {
+    font-family: 'Kanit';
+    font-weight: 300;
+    margin-top: 5px;
+  }
+  
+/* features section*/
+
+.feature-sectionmob {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 20px;
+  }
+  
+  .featuremob {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .feature-imagemob {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .feature-titlemob {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-descriptionmob {
+    font-size: 16px;
+  }
+
+/* last section */
+
+.lastsectionmob {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-sectionmob {
+    flex: 1;
+    margin-left: 3%;
+  }
+  
+  .image-sectionmob {
+    flex: 1;
+    text-align: right;
+  }
+
+  .text-sectionmob h1 {
+    font-family: 'Kanit';
+  }
+  
+
+  .text-sectionmob p {
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Archivo';
+  }
+  
+  .text-sectionmob button {
+    margin-right: 10px;
+  }
+
+
+  .featuresectionmob{
+    background-color: black;
+    height: 600px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+
+  @media only screen and (min-width : 992px){
+    .opalmob{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    .opalmob{
+        display: block;
+    }
+    .opaldesktop{
+        display: none;
+    }
+  }

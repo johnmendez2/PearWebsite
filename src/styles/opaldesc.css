@@ -1,0 +1,48 @@
+.desc4k{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    
+}
+
+.desc4ktext{
+    opacity: 1;
+}
+
+.descname{
+  font-family: 'Archivo' !important;
+    font-size: 3.5rem;
+    line-height: 50px;
+  }
+  
+  .descpara {
+    font-size: 1.8rem;
+    white-space: pre-line;
+}
+
+
+.futurepara{
+    width: 90% !important;
+    font-family: 'Archivo' !important;
+    font-size: 1.8rem !important;
+}
+
+.futuresection {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: #f0f0f0;
+    
+  }
+
+  .futuretext-section {
+    flex: 1;
+    opacity: 1;
+  }
+
+  
+  .futureimage-section {
+    flex: 1;
+    text-align: center;
+  }
