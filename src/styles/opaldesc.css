@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;700;900&display=swap');
 .desc4k{
     text-align: center;
     background-color: #f0f0f0;
@@ -5,44 +6,61 @@
     padding-top: 20%;
     
 }
-
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 3em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
 .desc4ktext{
     opacity: 1;
 }
 
 .descname{
-  font-family: 'Archivo' !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
     font-size: 3.5rem;
     line-height: 50px;
+    font-weight: 400;
   }
   
   .descpara {
     font-size: 1.8rem;
     white-space: pre-line;
+    font-weight: 200;
+    font-family: 'Hanken Grotesk', sans-serif !important;
 }
 
 
 .futurepara{
-    width: 90% !important;
-    font-family: 'Archivo' !important;
+    width: 60% !important;
+    font-family: 'Hanken Grotesk', sans-serif !important;
     font-size: 1.8rem !important;
+    font-weight: 200;
 }
 
 .futuresection {
-    display: flex;
-    align-items: center;
-    padding-bottom: 50px;
-    background-color: #f0f0f0;
-    
-  }
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding-bottom: 50px;
+  background-color: #f0f0f0;
+}
 
-  .futuretext-section {
-    flex: 1;
-    opacity: 1;
-  }
+/* Remove flex properties for .futuretext-section and .futureimage-section */
+.futuretext-section {
+  /* flex: 1; Remove this line */
+  opacity: 1;
+}
 
-  
-  .futureimage-section {
-    flex: 1;
-    text-align: center;
-  }
+.futureimage-section {
+  /* flex: 1; Remove this line */
+  text-align: center;
+}
+@media only screen and (max-width: 767px){
+  .futurepara{
+    width: 100% !important;
+    font-family: 'Hanken Grotesk', sans-serif !important;
+    font-size: 1.8rem !important;
+    font-weight: 200;
+}
+}

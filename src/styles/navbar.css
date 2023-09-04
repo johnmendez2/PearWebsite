@@ -1,11 +1,14 @@
     /* Medium Devices, Desktops */
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400;500;700;900&display=swap');
     .pearlogo{
-        font-size: 25px;
-        font-weight: 500;
-        color: black;
-        text-decoration: none;
-        margin-left: 2vw;
-    }
+      font-size: 20px;
+      font-weight: 700;
+      color: black;
+      text-decoration: none;
+      margin-left: 2vw;
+      font-family: 'Hanken Grotesk', sans-serif;
+      letter-spacing: 7.5px;
+  }
     .options{
         display: flex;
         right: 0;
@@ -13,22 +16,62 @@
         margin-right: 2vw;
     }
     @media only screen and (min-width : 992px) {
+      .home-navbar .collection {
+        color: white;
+        transition: color 0.3s; /* Add a smooth color transition effect */
+      }
+      
+      /* Hover styles for navbar options (black text) */
+      .home-navbar:hover .collection {
+        color: black;
+      }
         .menu-container{
           display: none;
         }
+        .pearlogo{
+          font-size: 20px;
+          font-weight: 700;
+          color: black;
+          text-decoration: none;
+          margin-left: 2vw;
+          font-family: 'Hanken Grotesk', sans-serif;
+          letter-spacing: 7.5px;
+          width: 10%;
+      }
+        .navbar-container {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 2; /* Set a higher z-index to make the navbar appear above the other content */
+        }
+        
+        /* Default styles for the navbar */
         .navbar {
           display: flex;
+          justify-content: space-between;
           align-items: center;
-          padding: 10px;
-          background: #cc2b5e;
-          height: 50px;
-          /* fallback for old browsers */
-          background: -webkit-linear-gradient(to right, #cc2b5e, #753a88);
-          /* Chrome 10-25, Safari 5.1-6 */
-          /* background: linear-gradient(to right, #cc2b5e, #753a88); */
-          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          background: white
+          padding: 20px;
+          background-color: transparent;
+          color: white;
+          transition: background-color 0.3s ease, color 0.3s ease;
         }
+        
+        /* Apply the styles when hovered on */
+        .navbar:hover {
+          background-color: white;
+          color: black;
+        }
+        .scrolling-navbar {
+          position: fixed;
+          top: -100px; /* Move it off-screen initially */
+          left: 0;
+          right: 0;
+          background-color: white;
+          color: black;
+          transition: top 0.3s, background-color 0.3s, color 0.3s;
+        }
+        
   
               .logo-container img {
                 cursor: pointer;
@@ -176,12 +219,13 @@
         .collection {
           position: relative;
           display: inline-block;
-          margin: 20px;
+          margin: 18px;
           color: black;
-          font-size: 25px;
-          font-weight: 500;
+          font-size: 18px;
+          font-weight: 400;
           cursor: pointer;
           text-decoration: none;
+          font-family: 'Hanken Grotesk', sans-serif;
         }
   
       
@@ -192,9 +236,9 @@
           bottom: -3px;
           left: 0;
           width: 0;
-          height: 4px;
+          height: 2px;
           background-color: black;
-          transition: width 0.3s ease-in-out;
+          transition: width 0.25s ease-in-out;
         }
         
         .collection:hover::before {
@@ -286,10 +330,9 @@
           height: 80px;
         }
         .logo-container img {
-          height: 90px;
+          height: 50px;
           display: flex;
           left: 5px;
-          position: absolute;
           top: 0;
       }
         .search-icon-container{
@@ -348,6 +391,7 @@
           display:flex; 
           position:absolute; 
           right:20px;
+          padding-bottom: 10px;
         }
         .menu-container {
           display: none;
@@ -380,7 +424,6 @@
           color: black;
           cursor: pointer;
           text-align: right;
-          text-transform: uppercase;
           display: block;
           text-decoration: none;
         }
